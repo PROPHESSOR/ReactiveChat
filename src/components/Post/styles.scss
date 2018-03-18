@@ -1,0 +1,110 @@
+@import '../../theme/palette';
+.post {
+    margin-top: 10px; // display: flex;
+    position: relative;
+    width: 500px;
+    min-height: 130px; //   margin-bottom: 10px;
+    padding: 12px;
+    border: 1px solid darken($paletteColor2, 15%);
+    border-radius: 3px;
+    background-color: $paletteColor2;
+    flex-direction: row;
+    .avatar {
+        border-radius: 50px;
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        margin-right: 15px;
+        transition: border .5s ease;
+        border: 1px solid $paletteColor5;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+    }
+    a,
+    time {
+        // margin-top: -15px;
+        // font-size: 75%;
+        position: absolute;
+        margin-right: 10px;
+        min-width: 50px;
+    }
+    time {
+        color: gray;
+        top: 33px;
+	}
+	
+	.cross {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 10px;
+		height: 10px;
+		background-image: url('../../theme/assets/cross.png');
+		background-repeat: no-repeat;
+        cursor: pointer;
+        user-select: none;
+        -webkit-user-select: none;
+
+		&:hover {
+			background-position: -13px 0;
+		}
+	}
+    a {
+        top: 17px;
+        color: $paletteColor7;
+        font-weight: bold; // text-decoration: underline;
+    }
+    p {
+        width: 410px;
+        min-height: 80px;
+        margin-top: 17px;
+        transition: font-size .5s ease;
+        border: 0;
+        outline: 0;
+        font-size: 14px;
+        font-weight: 300;
+        resize: none;
+        overflow-wrap: break-word;
+	}
+}
+
+//Да ну его
+
+/* @import '../../theme/palette';
+.post {
+	min-width: 256px;
+	margin-top: 15px;
+	background: $paletteColor11;
+	border: 1px solid $paletteColor4;
+
+    img {
+        display: block;
+        border-radius: 50px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        margin-right: 15px;
+    }
+    a {
+        text-decoration: underline;
+        font-size: 75%;
+        float: left;
+        color: black;
+		margin-right: 10px; // display: block;
+		height: 15px;
+    }
+    time {
+		font-size: 75%;
+		height:15px;
+		text-align: right;
+        color: gray;
+    }
+    p {
+		margin-top: 5px;
+        float: left;
+        display: block;
+        padding-top: 15px;
+    }
+} */

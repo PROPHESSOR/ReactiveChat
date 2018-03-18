@@ -1,0 +1,77 @@
+.composer {
+  display: flex;
+  position: relative;
+  width: 500px;
+  height: 130px;
+  margin-bottom: 10px;
+  padding: 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  background-color: #FFF;
+}
+
+.composer .avatar {
+  border-radius: 50px;
+}
+
+.composer img {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  transition: border .5s ease;
+  border: 1px solid #90949C;
+  border-radius: 50%;
+  cursor: pointer;
+  user-select: none;
+}
+
+.composer input[type='submit'] {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 58px;
+  height: 22px;
+  padding-top: 3px;
+  transition: background-color .2s ease-in;
+  border: 0;
+  border-radius: 2px;
+  outline: 0;
+  background-color: #4267B2;
+  color: #FFF;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.composer input[type='submit']:hover {
+  background-color: #365899;
+}
+
+.composer textarea {
+  width: 410px;
+  height: 80px;
+  margin-top: 7px;
+  transition: font-size .5s ease;
+  border: 0;
+  outline: 0;
+  font-size: 14px;
+  font-weight: 300;
+  resize: none;
+}
+
+.composer textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.composer textarea::placeholder {
+  transition: color .4s ease-out;
+  color: #90949C;
+}
+
+.composer textarea:focus::placeholder {
+  color: #c6c8cc;
+}
+
+.composer textarea:focus {
+  font-size: 24px;
+}
