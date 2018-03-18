@@ -25,6 +25,6 @@ export const getRandomColor = () => {
     return color;
 };
 
-const random = (a, b) => ~~(Math.random() * b) + a;
+export const random = (a, b) => Math.floor(Math.random() * b) + a;
 
 export const getRandomColorRGB = () => `rgb(${random(0, 255)}, ${random(0, 255)}, ${random(0, 255)})`;
